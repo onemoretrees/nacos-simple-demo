@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itheima.nacos</groupId>
+    <artifactId>nacos-simple-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+
+        <!-- nacos 需要-->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+
+        <!-- nacos 生成密码需要 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.1.4.RELEASE</version>
+        </dependency>
+
+        <!-- springboot 简单demo报错，解决办法
+        Failed to load class "org.slf4j.impl.StaticLoggerBinder"
+        -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <!-- junit 单元测试类 -->
+        <!-- 写了 scope 在 Java source 目录就引入不进去了，所以去掉了-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
